@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@v0.151.3/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@v0.151.3/examples/jsm/"
+          }
+        }
+    </script>
+    <style>
+        #canvas{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            }
+
+            .contents{
+            position: relative;
+            z-index: 1;
+            }
+    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" /><script type="module" src="typescript.js"></script>
+</head>
+<body>
+    <main>
+        <canvas id="canvas"></canvas>
+        <div class="control">
+          <span class="paramScrollY">スクロール量 <span id="scrollY"></span></span>
+        </div>
+        <div class="contents">
+          <div class="sectionbox is-1">
+            <p>これはHTMLコンテンツです。</p>
+            <p>左には、バス停とポストがあるよ</p>
+          </div>
+          <div class="sectionbox is-2">
+            <p>右には猫がいます</p>
+          </div>
+          <div class="sectionbox is-3">
+            <p>まっすぐいくと</p>
+          </div>
+          <div class="sectionbox is-4">
+            <p>おいなりさん</p>
+          </div>
+        </div>
+      </main>
+</body>
+</html>
